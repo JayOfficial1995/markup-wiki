@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap");
+@import "./common.scss";
 
 * {
   margin: 0;
@@ -8,4 +9,15 @@
 
 body {
   font-family: "PT Sans", sans-serif;
+}
+
+.App {
+  // @extend .container;
+
+  display: grid;
+  grid-template-columns: 250px 1fr;
+
+  @media only screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
 }

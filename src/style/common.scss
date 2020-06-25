@@ -1,4 +1,4 @@
-@import "./base.scss";
+
 @import "./color.scss";
 @import "./mixin.scss";
 
@@ -13,4 +13,9 @@ h3 {
 }
 p {
   font-size: 12px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
 }
