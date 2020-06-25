@@ -1,0 +1,9 @@
+@import "../../style/common.scss";
+
+.knowledge-share-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+    margin-top: 50px;
+    padding: 0 20px;
+}

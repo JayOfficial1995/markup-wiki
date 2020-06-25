@@ -1,5 +1,6 @@
 import React from "react";
 import { MenuOutlined } from "@ant-design/icons";
+import { Link } from "react-router-dom";
 
 import "./navbar.scss";
 
@@ -20,14 +21,14 @@ function Navbar() {
       </figure>
       <ul className="nav-ul">
         <li className="nav-li">
-          <a href="#" className="nav-link">
+          <Link to="/" href="#" className="nav-link">
             Hierachy
-          </a>
+          </Link>
         </li>
         <li className="nav-li">
-          <a href="#" className="nav-link">
+          <Link to="/KnowledgeShare" href="#" className="nav-link">
             Knowledge Share
-          </a>
+          </Link>
         </li>
         <li className="nav-li">
           <a href="#" className="nav-link">
