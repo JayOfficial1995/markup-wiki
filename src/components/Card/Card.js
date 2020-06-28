@@ -16,7 +16,7 @@ function Card({
         <img src={thumbnailImg} alt={imageAlt} className="thumbnail-image" />
       </picture>
       <figcaption>
-        <h3 className="read-time">{readTime}</h3>
+        {readTime && (<h3 className="read-time">{readTime}</h3>)}
         <h2 className="title">{title}</h2>
         <h3 className="subtitle">{subTitle}</h3>
         <p className="descritption">{description}</p>

@@ -5,6 +5,8 @@ import Navbar from "./components/Navbar/Navbar";
 import Hierachy from "./pages/Hierachy/Hierachy";
 import KnowledgeShare from "./pages/KnowledgeShare/KnowledgeShare";
 import LearningPath from "./pages/LearningPath/LearningPath";
+import MentorsAndMentees from "./pages/MentorsAndMentees/MentorsAndMentees";
+
 
 import 'antd/dist/antd.css';
 import "./style/base.scss";
@@ -18,7 +20,7 @@ function App() {
           <Route path="/" exact component={Hierachy} />
           <Route path="/knowledge-share" component={KnowledgeShare} />
           <Route path="/learning-path" component={LearningPath}/>
-          {/* <Route path="/mentorsAndMentees" component={MentorsAndMentees}/> */}
+          <Route path="/mentors-and-mentees" component={MentorsAndMentees}/>
         </Switch>
       </Router>
     </div>

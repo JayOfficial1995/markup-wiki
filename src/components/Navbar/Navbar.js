@@ -36,9 +36,9 @@ function Navbar() {
           </Link>
         </li>
         <li className="nav-li">
-          <a href="#" className="nav-link">
+          <Link to="/mentor-and-mentees" className="nav-link">
             Mentors and Mentees
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>

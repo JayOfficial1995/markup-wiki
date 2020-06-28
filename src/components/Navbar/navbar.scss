@@ -17,12 +17,17 @@
   .logo {
     margin-bottom: 30px;
     display: block;
+
     .logo-img {
       max-height: 36px;
       max-width: 100%;
     }
   }
 
+  .logo-title {
+    font-weight: 700;
+  }
+  
   .nav-ul {
     margin-top: 40px;
     list-style: none;
