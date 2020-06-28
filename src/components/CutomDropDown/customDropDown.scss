@@ -1,0 +1,10 @@
+@import "../../style/common.scss";
+
+
+.custom-dropdown {
+
+    .ant-select-selector {
+       border: none;
+       background-color: red;
+    }
+}

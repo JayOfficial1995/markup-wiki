@@ -26,14 +26,14 @@ function Navbar() {
           </Link>
         </li>
         <li className="nav-li">
-          <Link to="/KnowledgeShare" href="#" className="nav-link">
+          <Link to="/knowledge-share" href="#" className="nav-link">
             Knowledge Share
           </Link>
         </li>
         <li className="nav-li">
-          <a href="#" className="nav-link">
+          <Link to="/learning-path" className="nav-link">
             Learning Path
-          </a>
+          </Link>
         </li>
         <li className="nav-li">
           <a href="#" className="nav-link">
