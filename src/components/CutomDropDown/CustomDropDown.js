@@ -5,17 +5,19 @@ import "./customDropDown.scss";
 
 const { Panel } = Collapse;
 
-function CustomDropDown({props}) {
-  const {title, content} = props
+function CustomDropDown(props) {
+  const { learningPathData } = props
   return (
     <Collapse className="drop-down">
-      <Panel header={title}>
-        {content.map((data, index)=>(
-          <a href={data.url} className="web-links">
-            {data.link}
-          </a>
-        ))}
-      </Panel>
+      {learningPathData.map((data, index) => (
+        <Panel header={data.title} key={index}>
+          {data.content.map((newContent, index) => (
+            <a key={index} href={newContent.url} className="web-links" target="_blank">
+              {newContent.link}
+            </a>
+          ))}
+        </Panel>
+      ))}
     </Collapse>
   );
 }
