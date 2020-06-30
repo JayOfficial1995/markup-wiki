@@ -1,17 +1,22 @@
 import React from "react";
-import { Select } from "antd";
+import { Collapse } from "antd";
 
-import "./customDropDown.scss"
+import "./customDropDown.scss";
 
-const { Option } = Select;
+const { Panel } = Collapse;
 
-function CustomDropDown() {
+function CustomDropDown({props}) {
+  const {title, content} = props
   return (
-    <Select defaultValue="lucy" className="custom-dropdown">
-      <Option value="jack">Jack</Option>
-      <Option value="lucy">Lucy</Option>
-      <Option value="Yiminghe">yiminghe</Option>
-    </Select>
+    <Collapse className="drop-down">
+      <Panel header={title}>
+        {content.map((data, index)=>(
+          <a href={data.url} className="web-links">
+            {data.link}
+          </a>
+        ))}
+      </Panel>
+    </Collapse>
   );
 }
 

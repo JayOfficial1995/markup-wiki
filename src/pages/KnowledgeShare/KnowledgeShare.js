@@ -11,11 +11,11 @@ function KnowledgeShare() {
       {KnowledgeShareData.map((data, index) => {
         return (
           <Card
-            thumbnailImg={data.imageSrc}
+            image={data.imageSrc}
             imageAlt={data.imageAlt}
             readTime={data.readTime}
             title={data.title}
-            subTitle={data.subTitle}
+            date={data.date}
             description={data.description}
           />
         );

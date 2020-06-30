@@ -19,6 +19,7 @@ function Navbar() {
           <h2 className="logo-title">MARKUP TEAM</h2>
         </figcaption>
       </figure>
+      
       <ul className="nav-ul">
         <li className="nav-li">
           <Link to="/" href="#" className="nav-link">
@@ -36,7 +37,7 @@ function Navbar() {
           </Link>
         </li>
         <li className="nav-li">
-          <Link to="/mentor-and-mentees" className="nav-link">
+          <Link to="/mentors-and-mentees" className="nav-link">
             Mentors and Mentees
           </Link>
         </li>

@@ -1,0 +1,17 @@
+@import "../../style/common.scss";
+
+.learning-path-container {
+  margin-top: 40px;
+
+  .learning-path-wrapper {
+    max-width: 600px;
+    margin: auto;
+
+    .Learning-path-title {
+      margin-bottom: 50px;
+      font-weight: 700;
+      color: $green-color;
+      text-align: center;
+    }
+  }
+}

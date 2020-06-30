@@ -9,7 +9,7 @@ import MentorsAndMentees from "./pages/MentorsAndMentees/MentorsAndMentees";
 
 
 import 'antd/dist/antd.css';
-import "./style/base.scss";
+import "./style/app.scss";
 
 function App() {
   return (
