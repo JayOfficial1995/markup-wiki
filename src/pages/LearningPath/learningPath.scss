@@ -1,9 +1,8 @@
 @import "../../style/common.scss";
 
 .learning-path-container {
-  margin-top: 40px;
-  padding: 0 20px;
-
+  @include layout(40px, 20px, 20px);
+  
   .learning-path-wrapper {
     max-width: 600px;
     margin: auto;

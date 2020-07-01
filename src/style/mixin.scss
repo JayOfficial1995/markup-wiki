@@ -1,0 +1,5 @@
+@mixin layout($marginTop, $paddingLeft, $paddingRight) {
+  margin-top: $marginTop;
+  padding-left: $paddingLeft;
+  padding-right: $paddingRight;
+}
