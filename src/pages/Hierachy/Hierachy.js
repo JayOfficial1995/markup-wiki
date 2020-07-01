@@ -6,7 +6,7 @@ import { HierachyData } from "../../jsonObjects/hierachyData";
 
 function Hierachy() {
   return (
-    <div className="hierachy-wrapper">
+    <section className="hierachy-wrapper">
       {HierachyData.map((data, index) => (
         <Card
           key={index}
@@ -17,7 +17,7 @@ function Hierachy() {
           description={data.description}
         />
       ))}
-    </div>
+    </section>
   );
 }
 

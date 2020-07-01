@@ -8,7 +8,7 @@ function MentorsAndMentees() {
     <section className="mentors-container">
       {MentorshipData.map((data, index) => (
         <>
-          <article className="mentors-wrapper">
+          <article className="mentors-wrapper" key={index}>
             <div className="mentors-content">
               <h2 className="mentors-title">{data.title}</h2>
               <p className="mentors-description">{data.description}</p>

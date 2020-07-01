@@ -7,12 +7,12 @@ import "./learningPath.scss";
 
 function LearningPath() {
   return (
-    <div className="learning-path-container">
-      <div className="learning-path-wrapper">
+    <section className="learning-path-container">
+      <article className="learning-path-wrapper">
         <h1 className="Learning-path-title">TUTORIALS</h1>
         <CustomDropDown learningPathData={LearningPathData}/>
-      </div>
-    </div>
+      </article>
+    </section>
   );
 }
 

@@ -3,23 +3,24 @@ import { KnowledgeShareData } from "../../jsonObjects/knowledgeShareData";
 
 import Card from "../../components/Card/Card";
 
-import "./knowledgeShare.scss"
+import "./knowledgeShare.scss";
 
 function KnowledgeShare() {
   return (
-    <div className="knowledge-share-wrapper">
+    <section className="knowledge-share-wrapper">
       {KnowledgeShareData.map((data, index) => (
-          <Card
-            image={data.imageSrc}
-            imageAlt={data.imageAlt}
-            readTime={data.readTime}
-            title={data.title}
-            date={data.date}
-            description={data.description}
-            url={data.url}
-          />
+        <Card
+          key={index}
+          image={data.imageSrc}
+          imageAlt={data.imageAlt}
+          readTime={data.readTime}
+          title={data.title}
+          date={data.date}
+          description={data.description}
+          url={data.url}
+        />
       ))}
-    </div>
+    </section>
   );
 }
 
