@@ -12,6 +12,7 @@
   .read-time {
     padding: 10px 0;
     font-weight: bold;
+    text-transform: uppercase;
   }
 
   .title {
@@ -22,8 +23,14 @@
   .designation {
     padding-bottom: 20px;
     font-weight: bold;
+    text-transform: uppercase;
   }
   .date {
     padding-bottom: 20px;
+    text-transform: uppercase;
+  }
+
+  .descritption {
+    color: $black-color;
   }
 }

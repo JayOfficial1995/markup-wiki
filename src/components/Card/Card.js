@@ -10,20 +10,21 @@ function Card({
   designation,
   date,
   readTime,
+  url,
 }) {
   return (
-    <figure className="card-wrapper">
+    <a href={url} target="_blank" className="card-wrapper">
       <picture className="thumbnail">
         <img src={image} alt={imageAlt} className="thumbnail-image" />
       </picture>
       <figcaption>
-        {readTime && (<h3 className="read-time">{readTime}</h3>)}
+        {readTime && <h3 className="read-time">{readTime}</h3>}
         <h2 className="title">{title}</h2>
         {designation && <h3 className="designation">{designation}</h3>}
         {date && <h3 className="date">{date}</h3>}
         <p className="descritption">{description}</p>
       </figcaption>
-    </figure>
+    </a>
   );
 }
 

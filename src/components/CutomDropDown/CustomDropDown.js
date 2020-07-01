@@ -11,9 +11,9 @@ function CustomDropDown(props) {
     <Collapse className="drop-down">
       {learningPathData.map((data, index) => (
         <Panel header={data.title} key={index}>
-          {data.content.map((newContent, index) => (
-            <a key={index} href={newContent.url} className="web-links" target="_blank">
-              {newContent.link}
+          {data.content.map((webLinks, index) => (
+            <a key={index} href={webLinks.url} className="web-links" target="_blank">
+              {webLinks.link}
             </a>
           ))}
         </Panel>
