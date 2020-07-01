@@ -3,3 +3,11 @@
   padding-left: $paddingLeft;
   padding-right: $paddingRight;
 }
+
+@mixin commonGrid ($column, $columnGap, $rowGap){
+
+  display: grid;
+  grid-template-columns: $column;
+  grid-column-gap: $columnGap;
+  grid-row-gap: $rowGap;
+}

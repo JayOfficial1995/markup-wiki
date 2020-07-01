@@ -8,7 +8,7 @@ function MentorsAndMentees() {
     <section className="mentors-container">
       {MentorshipData.map((data, index) => (
         <>
-          <div className="mentors-wrapper">
+          <article className="mentors-wrapper">
             <div className="mentors-content">
               <h2 className="mentors-title">{data.title}</h2>
               <p className="mentors-description">{data.description}</p>
@@ -20,7 +20,7 @@ function MentorsAndMentees() {
                 className="image"
               />
             </picture>
-          </div>
+          </article>
           <picture className="">
             <img
               src={data.mentorshipImage}

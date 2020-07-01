@@ -3,11 +3,9 @@
 .mentors-container {
   @include layout(40px, 20px, 20px);
 
-
   .mentors-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 20px;
+    @include commonGrid(1fr 1fr, 20px, 0);
+
     align-items: center;
     padding-bottom: 30px;
     border-bottom: 1px solid $black-color;
@@ -33,8 +31,7 @@
       }
     }
     @media only screen and (max-width: 767px) {
-      grid-template-columns: 1fr;
-      grid-row-gap: 20px;
+      @include commonGrid(1fr, 0, 20px);
     }
   }
   .mentorship-image {
