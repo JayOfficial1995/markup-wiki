@@ -1,0 +1,11 @@
+@import "./base.scss";
+
+.App {
+  @extend .container;
+
+  @include commonGrid(250px 1fr, 0, 0);
+
+  @media only screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,24 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
+import Navbar from "./components/Navbar/Navbar";
+import Hierachy from "./pages/Hierachy/Hierachy";
+import KnowledgeShare from "./pages/KnowledgeShare/KnowledgeShare";
+import LearningPath from "./pages/LearningPath/LearningPath";
+import MentorsAndMentees from "./pages/MentorsAndMentees/MentorsAndMentees";
+
+
+import 'antd/dist/antd.css';
+import "./style/app.scss";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Navbar />
+        <Switch>
+          <Route path="/" exact component={Hierachy} />
+          <Route path="/knowledge-share" component={KnowledgeShare} />
+          <Route path="/learning-path" component={LearningPath}/>
+          <Route path="/mentors-and-mentees" component={MentorsAndMentees}/>
+        </Switch>
+      </Router>
     </div>
   );
 }

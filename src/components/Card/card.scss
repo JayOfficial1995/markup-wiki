@@ -1,0 +1,36 @@
+@import "../../style/common.scss";
+
+.card-wrapper {
+  .thumbnail {
+    display: block;
+
+    .thumbnail-image {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  .read-time {
+    padding: 10px 0;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .title {
+    color: $green-color;
+    padding-top: 10px;
+    font-weight: 700;
+  }
+  .designation {
+    padding-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .date {
+    padding-bottom: 20px;
+    text-transform: uppercase;
+  }
+
+  .descritption {
+    color: $black-color;
+  }
+}

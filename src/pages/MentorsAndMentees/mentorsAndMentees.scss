@@ -1,0 +1,42 @@
+@import "../../style/common.scss";
+
+.mentors-container {
+  @include layout(40px, 20px, 20px);
+
+  .mentors-wrapper {
+    @include commonGrid(1fr 1fr, 20px, 0);
+
+    align-items: center;
+    padding-bottom: 30px;
+    border-bottom: 1px solid $black-color;
+
+    .mentors-content {
+      .mentors-title {
+        color: $green-color;
+        padding-bottom: 20px;
+      }
+      .mentors-description {
+        font-size: 13px;
+        font-weight: normal;
+        font-family: "Merriweather", serif;
+        font-weight: 600;
+      }
+    }
+    .mentor-image {
+      display: block;
+
+      .image {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+    @media only screen and (max-width: 767px) {
+      @include commonGrid(1fr, 0, 20px);
+    }
+  }
+  .mentorship-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 30px;
+  }
+}

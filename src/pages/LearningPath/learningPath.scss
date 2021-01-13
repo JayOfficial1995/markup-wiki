@@ -1,0 +1,16 @@
+@import "../../style/common.scss";
+
+.learning-path-container {
+  @include layout(40px, 20px, 20px);
+  
+  .learning-path-wrapper {
+    max-width: 600px;
+    margin: auto;
+
+    .Learning-path-title {
+      font-weight: 700;
+      color: $green-color;
+      text-align: center;
+    }
+  }
+}
