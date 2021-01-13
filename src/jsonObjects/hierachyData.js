@@ -1,7 +1,5 @@
-import React from 'react'
-import { T } from 'antd/lib/upload/utils'
 
-export const  HierachyData = [
+export const  hierachyData = [
  {
      imageSrc :"/images/male-user.png",
      imageAlt : "Ibrahim khan Image",

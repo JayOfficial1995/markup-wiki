@@ -6,11 +6,13 @@
     background: none;
     font-size: 20px;
     font-weight: 700;
+
     .ant-collapse-item {
       border-bottom: 1px solid $black-color;
 
       .ant-collapse-header {
         padding: 20px 0;
+
         .anticon {
           left: 96%;
 
@@ -24,13 +26,13 @@
         border-top: 1px solid $black-color;
 
         .ant-collapse-content-box {
-            .web-links {
-                display: block;
-                padding: 10px 0;
-                color : $green-color;
-                font-family: "Merriweather", serif;
-                font-size: 13px;
-            }
+          .web-links {
+            display: block;
+            padding: 10px 0;
+            color: $green-color;
+            font-family: "Merriweather", serif;
+            font-size: 13px;
+          }
         }
       }
     }

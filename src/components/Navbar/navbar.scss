@@ -1,7 +1,7 @@
 @import "../../style/common.scss";
 
 .navigation-bar {
-  width: 250px;
+  // width: 250px;
   padding: 48px;
   z-index: 10;
 
@@ -54,6 +54,7 @@
     padding: 10px;
     display: flex;
     align-items: center;
+    position: relative;
 
     .check-button {
       display: block;

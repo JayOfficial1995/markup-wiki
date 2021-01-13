@@ -2,12 +2,12 @@ import React from "react";
 
 import "./hierachy.scss";
 import Card from "../../components/Card/Card";
-import { HierachyData } from "../../jsonObjects/hierachyData";
+import { hierachyData } from "../../jsonObjects/hierachyData";
 
 function Hierachy() {
   return (
     <section className="hierachy-wrapper">
-      {HierachyData.map((data, index) => (
+      {hierachyData.map((data, index) => (
         <Card
           key={index}
           image={data.imageSrc}
